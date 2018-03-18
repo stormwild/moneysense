@@ -4,16 +4,22 @@
   <body @php(body_class())>
     @php(do_action('get_header'))
     @include('partials.header')
-    <div class="wrap container" role="document">
-      <div class="content">
-        <main class="main">
-          @yield('content')
-        </main>
+    <div class="wrap" role="document">
+      <div class="content container">
+        <div class="row">
         @if (App\display_sidebar())
-          <aside class="sidebar">
+          <main class="main col-lg-8">
+            @yield('content')
+          </main>
+          <aside class="sidebar col-lg-4">
             @include('partials.sidebar')
           </aside>
+        @else 
+          <main class="main col">
+            @yield('content')
+          </main>
         @endif
+        </div>
       </div>
     </div>
     @php(do_action('get_footer'))

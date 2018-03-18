@@ -139,8 +139,9 @@ class NavWalker extends \Walker_Nav_Menu
 
         $atts['target'] = ! empty($item->target) ? $item->target : '';
         $atts['rel']    = ! empty($item->xfn) ? $item->xfn : '';
+        
         // If item has_children add atts to <a>.
-        if ($args->has_children && 0 === $depth && $args->depth > 1) {
+        if ($args->has_children && 0 === $depth) {
             $atts['href']          = '#';
             $atts['data-toggle']   = 'dropdown';
             $atts['aria-haspopup'] = 'true';

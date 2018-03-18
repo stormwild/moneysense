@@ -1,1 +1,1 @@
-<figure>@php(the_post_thumbnail())</figure>
+@php(the_post_thumbnail(null, ['class' => 'card-img-top img-fluid']))
