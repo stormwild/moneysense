@@ -1,4 +1,16 @@
-.home {
+.main,
+.sidebar {
+  padding-top: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  .main,
+  .sidebar {
+    padding-top: 3rem;
+  }
+}
+
+.content {
   .card {
     min-width: 30%;
   }
