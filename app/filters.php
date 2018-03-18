@@ -93,3 +93,13 @@ add_filter('sage/template/app/data', function ($data) {
         'sf_submit_text' => esc_attr_x('Search', 'submit button', 'sage'),
     ];
 });
+
+/**
+ * Modifies the html output of the_custom_logo() to support Bootstrap 4 navbar-brand
+ */
+add_filter('get_custom_logo', function ($html) {
+    $html = \str_replace('img', 'img title="' . get_bloginfo('name', 'display') . '"', $html);
+    $html = \str_replace('custom-logo-link', 'navbar-brand', $html);
+    $html = \str_replace('custom-logo', 'd-inline-block align-top', $html);
+    return $html;
+});

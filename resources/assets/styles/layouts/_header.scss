@@ -1,3 +1,7 @@
+.banner {
+  background-color: $dark;
+}
+
 .banner .nav li {
   @extend .nav-item;
 }

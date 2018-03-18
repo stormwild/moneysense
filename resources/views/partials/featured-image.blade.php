@@ -1,0 +1,1 @@
+<figure>@php(the_post_thumbnail())</figure>

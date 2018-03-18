@@ -209,9 +209,9 @@ if (config.enabled.cacheBusting) {
   );
 }
 
-if (config.enabled.watcher) {
+/* if (config.enabled.watcher) {
   webpackConfig.entry = require('./util/addHotMiddleware')(webpackConfig.entry);
   webpackConfig = merge(webpackConfig, require('./webpack.config.watch'));
-}
+} */
 
 module.exports = merge(webpackConfig, desire(`${__dirname}/webpack.config.preset`));
