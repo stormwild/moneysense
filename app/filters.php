@@ -120,3 +120,9 @@ add_filter('sage/display_sidebar', function ($display) {
 
     return $display;
 });
+
+add_filter('get_search_form', function () {
+    $form = '';
+    echo template('partials.search-form');
+    return $form;
+});

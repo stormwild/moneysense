@@ -4,3 +4,21 @@
 $theme-colors: (
   primary: #525ddc
 );
+// Color overrides
+
+$blue:    #2196f3 !default;
+
+// Body
+
+$body-color:                #4f5758 !default;
+
+// Line height 
+
+$line-height-lg:              1.625 !default;
+$line-height-sm:              1.625 !default;
+
+// Fonts
+
+$line-height-base:            1.625 !default;
+
+$headings-line-height:        1.2 !default;
