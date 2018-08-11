@@ -3,8 +3,8 @@
   <div class="card-body">
     <h2 class="entry-title card-title"><a href="{{ get_permalink() }}">{{ get_the_title() }}</a></h2>
     @include('partials/entry-meta')
-  </div>
-  <div class="entry-summary card-text">
+    <div class="entry-summary card-text">
       @php(the_excerpt())
+    </div>
   </div>
 </article>
