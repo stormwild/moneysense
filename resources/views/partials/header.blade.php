@@ -2,11 +2,13 @@
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
     @if (has_custom_logo())
-        {!! the_custom_logo() !!}
+      {!! the_custom_logo() !!}
+    @else
+      <h1 class="site-title"><a href="{!! esc_url(home_url('/')) !!}" class="text-white">{{ bloginfo('name') }}</a></h1>    
     @endif
     <div class="navbar-text">
-    <h3>Add goes here</h3>
-    <p>More text</p>
+      <h3>Add goes here</h3>
+      <p>More text</p>
     </div>
   </nav>
 </header>
