@@ -105,7 +105,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "font-awesome": "~4.7",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "~1.11"
   }
 }
